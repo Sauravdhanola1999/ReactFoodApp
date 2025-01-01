@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Landing from "./components/Landing";
-import AllRestaurents from "./components/AllRestaurents";
+import Landing from "./pages/Landing";
+import AllRestaurents from "./pages/AllRestaurents";
+import SearchFood from "./pages/SearchFood";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/restaurents" element={<AllRestaurents />} />
+        <Route path="/search" element={<SearchFood />} />
       </Routes>
     </div>
   );
