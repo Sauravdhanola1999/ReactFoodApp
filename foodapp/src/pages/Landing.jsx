@@ -8,28 +8,28 @@ import food from "../assets/c1.avif";
 const Landing = () => {
   return (
     <div className="bg-[#FF5200] h-auto">
-      <div className="flex justify-between py-12 px-20">
+      <div className="flex justify-between py-9 px-32">
         <img src={logo} alt="" className="h-[48px]" />
-        <div className="flex text-white items-center gap-6">
-          <p>Swiggy Corporate</p>
-          <p>Partner With Us</p>
-          <button className="text-white border px-8 py-4 rounded-lg">
+        <div className="flex text-white items-center gap-5">
+          <p className="font-bold text-[15px]">Swiggy Corporate</p>
+          <p className="font-bold text-[13px">Partner With Us</p>
+          <button className="text-white font-bold text-sm border px-5 py-4 rounded-2xl">
             Get The App
             <i className="fa-solid fa-arrow-right fa-rotate-by mx-2"></i>
           </button>
-          <button className="bg-black rounded-lg text-white px-8 py-4">
+          <button className="bg-black rounded-2xl text-white font-bold px-8 py-4">
             Sign In
           </button>
         </div>
       </div>
-      <div className="flex relative">
+      <div className="flex relative pt-14">
         <img
-          className="absolute left-0 h-[450px] w-[250px]"
+          className="absolute left-0 top-0 h-[450px] w-[250px]"
           src={veggie}
           alt=""
         />
         <div className="h-[100%] w-[100%] mx-auto items-center gap-10 flex flex-col">
-          <h1 className="text-[48px] text-white text-center">
+          <h1 className="text-[37px] text-white font-bold text-center">
             Order food & groceries. Discover <br /> best restaurants. Swiggy it!
           </h1>
           <div className="flex justify-center items-center space-x-2 w-[60%]">
@@ -72,7 +72,7 @@ const Landing = () => {
           </div>
         </div>
         <img
-          className="absolute right-0 h-[450px] w-[250px]"
+          className="absolute right-0 top-0 h-[450px] w-[250px]"
           src={sushi}
           alt=""
         />
