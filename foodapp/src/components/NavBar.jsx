@@ -1,11 +1,10 @@
 import React from "react";
-// import logoorange from "../assets/swiggysearch.jpg";
 import { Link } from "react-router-dom";
 import { BiSolidOffer } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <nav className="w-full px-16 py-4 shadow-md">
+    <nav className="w-full px-20 py-4 shadow-md">
       <div className="flex flex-wrap items-center justify-between">
         <Link to="/">
           <img

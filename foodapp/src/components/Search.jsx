@@ -2,9 +2,9 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div className="w-[50%] relative">
+    <div className="w-[70%] relative">
       <input
-        className="w-[100%] h-[56px] rounded-lg border border-gray-300 p-4"
+        className="w-[100%] h-[50px] font-medium rounded-md border-2 p-2 focus:outline-none"
         type="text"
         placeholder="Search for restaurant, item or more"
       />

@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "../assets/swiggylogo.png";
 import veggie from "../assets/veggie.avif";
@@ -13,9 +14,9 @@ const Landing = () => {
         <div className="flex text-white items-center gap-5">
           <p className="font-bold text-[15px]">Swiggy Corporate</p>
           <p className="font-bold text-[13px">Partner With Us</p>
-          <button className="text-white font-bold text-sm border px-5 py-4 rounded-2xl">
+          <button className="text-white flex font-bold items-center gap-1 text-sm border px-4 py-4 rounded-2xl">
             Get The App
-            <i className="fa-solid fa-arrow-right fa-rotate-by mx-2"></i>
+            <MdOutlineArrowOutward style={{ fontSize: "25px" }} />
           </button>
           <button className="bg-black rounded-2xl text-white font-bold px-8 py-4">
             Sign In
