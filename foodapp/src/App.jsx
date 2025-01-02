@@ -10,12 +10,11 @@ const App = () => {
   const isLandingPage = location.pathname === "/";
   return (
     <div>
-       {!isLandingPage && <NavBar />}
+      {!isLandingPage && <NavBar />}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/restaurents" element={<AllRestaurents />} />
         <Route path="/search" element={<SearchFood />} />
-        
       </Routes>
     </div>
   );
