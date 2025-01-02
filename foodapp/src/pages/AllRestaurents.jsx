@@ -13,6 +13,7 @@ const AllRestaurents = () => {
       try {
         const response = await fetch(API);
         const data = await response.json();
+        // console.log(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         setData(data.data.cards[0].card.card.imageGridCards.info);
         setData2(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
       } catch (error) {
@@ -23,7 +24,7 @@ const AllRestaurents = () => {
   }, []);
 
   return (
-    <div className="pt-10 flex justify-center items-center">
+    <div className="pt-10 flex flex-col justify-center items-center">
       <div>
         <Corousel data={data} />
         <hr style={{ border: "1px solid #ddd", marginTop: "50px" }} />
