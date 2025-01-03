@@ -2,7 +2,7 @@ import React from "react";
 
 import { Cloudinary_URL } from "../utils/Constants";
 
-const Corousel = ({data}) => {
+const Corousel = ({ data }) => {
   return (
     <div>
       <h1 className="font-extrabold text-2xl">What's On Your Mind?</h1>
@@ -18,6 +18,7 @@ const Corousel = ({data}) => {
             return <img src={Cloudinary_URL + item.imageId} />;
           })}
       </div>
+      <hr style={{ border: "1px solid #ddd", marginTop: "50px" }} />
     </div>
   );
 };
